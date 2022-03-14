@@ -9,7 +9,7 @@ spec:
   source:
     repoURL: https://github.com/yeswanth9171/Deployments.git
     targetRevision: HEAD
-    path: Deployments/Nginx
+    path: Deployments/Nginx/Deployment
   destination:
     server: https://kubernetes.default.svc
     namespace: ns-nginx
