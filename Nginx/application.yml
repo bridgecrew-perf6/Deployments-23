@@ -7,7 +7,7 @@ spec:
   project: default
   
   source:
-    repoURL: https://github.com/yeswanth9171/learning.git
+    repoURL: https://github.com/yeswanth9171/Deployments.git
     targetRevision: HEAD
     path: Deployments/Nginx
   destination:
