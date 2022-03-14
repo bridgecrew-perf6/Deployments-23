@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: nginx-environment-variables
+data:
+  # property-like keys; each key maps to a simple value
+  thread: "3"
+  interface: "user"
