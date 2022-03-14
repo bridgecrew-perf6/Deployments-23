@@ -24,10 +24,10 @@ spec:
       - name: nginx
         image: nginx
         ports:
-        - containerPort: 8983
+        - containerPort: 80
         livenessProbe:
           tcpSocket:
-            port: 8983
+            port: 80
           initialDelaySeconds: 5
           periodSeconds: 10
 
