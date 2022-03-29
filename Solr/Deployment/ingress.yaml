@@ -6,7 +6,7 @@ metadata:
   name: myapp-solr-ingress
 spec:
   rules:
-  - host: "my-local.localhost"
+  - host: "my-localhost.localhost"
     http:
       paths:
       - path: /solr
