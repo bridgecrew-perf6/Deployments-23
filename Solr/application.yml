@@ -1,0 +1,26 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: solrapp
+  namespace: argocd
+spec:
+  project: default
+  
+  source:
+    repoURL: https://github.com/yeswanth9171/Deployments.git
+    targetRevision: HEAD
+    path: solr/Deployment
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: ns-solr
+    
+  syncPolicy:
+    syncOptions:
+    - CreateNamespace=true
+    
+    automated:
+      selfHeal: true
+      prune: true
+      
+      
+    
